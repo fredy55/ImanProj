@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demo Blog | Home</title>
+</head>
+
+<body>
+    <h2>{{ blogTitle }}</h2>
+    <table border="1" width="400px">
+        <tr align="center">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr align="center" *ngFor="let author of authors">
+            <td>{{ author.name }}</td>
+            <td>{{ author.email }}</td>
+            <td>{{ author.score }}</td>
+        </tr>
+    </table>
+</body>
+
+</html>
