@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class BlogsService {
 
-  constructor() { }
+  private url = 'https://vclokoreweb.com/postapp/articles';
+
+  constructor(private httpClient: HttpClient) { }
+
+  getPosts() {
+    return this.httpClient.get(this.url);
+  }
 
   getAuthors() {
     return [
@@ -26,4 +34,6 @@ export class BlogsService {
       }
     ]
   }
+
+
 }

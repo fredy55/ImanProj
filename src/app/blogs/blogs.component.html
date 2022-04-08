@@ -16,10 +16,10 @@
             <th>Email</th>
             <th>Password</th>
         </tr>
-        <tr align="center" *ngFor="let author of authors">
-            <td>{{ author.name }}</td>
-            <td>{{ author.email }}</td>
-            <td>{{ author.score }}</td>
+        <tr align="center" *ngFor="let post of posts">
+            <td>{{ post.title }}</td>
+            <!-- <td>{{ author.email }}</td>
+            <td>{{ author.score }}</td> -->
         </tr>
     </table>
 </body>
