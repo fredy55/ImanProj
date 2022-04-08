@@ -33,8 +33,8 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'user',
-        'password' => 'Fredy255',
+        'username' => 'root',
+        'password' => '',
         'database' => 'post_blogdb',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',

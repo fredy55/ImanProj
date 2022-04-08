@@ -21,7 +21,8 @@ class Articles extends BaseController
 
         $model = new Article();
         $data = $model->findAll();
-        return $this->respond($data);
+        // var_dump(['dffds'=>'dfasdfs']);
+        return $this->respond([$data]);
     }
 
     /**
